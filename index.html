@@ -1,25 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #111; color: white; padding: 20px; text-align: center; }
-    .hero { padding: 80px 20px; text-align: center; }
-    .btn { background: #007bff; padding: 10px 20px; color: white; border: none; border-radius: 5px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Akos Designs | Creative Designer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#222;
+line-height:1.6;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#0a66ff;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav a:hover{
+color:#0a66ff;
+}
+
+/* Hero Section */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 10%;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:40px;
+color:#0a66ff;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 24px;
+background:#0a66ff;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#0049c6;
+}
+
+/* Hero Image */
+
+.hero img{
+width:350px;
+border-radius:12px;
+}
+
+/* About Section */
+
+.about{
+padding:80px 10%;
+background:#f5f9ff;
+}
+
+.about h2{
+color:#0a66ff;
+margin-bottom:15px;
+}
+
+/* Projects */
+
+.projects{
+padding:80px 10%;
+}
+
+.projects h2{
+color:#0a66ff;
+margin-bottom:30px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Contact */
+
+.contact{
+padding:80px 10%;
+background:#f5f9ff;
+text-align:center;
+}
+
+.contact h2{
+color:#0a66ff;
+margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+font-size:14px;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Your Name</h1>
+
+<div class="logo">Akos Designs</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
+<!-- Hero -->
+
 <section class="hero">
-  <h2>Hello, I’m a Creative Professional</h2>
-  <p>I design and build clean digital experiences.</p>
-  <a href="#" class="btn">Download CV</a>
+
+<div class="hero-text">
+
+<h1>Creative Designer</h1>
+
+<p>
+Welcome to Akos Designs.  
+I create clean, modern, and visually engaging designs that help brands communicate their ideas clearly.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Designer illustration">
+</div>
+
 </section>
+
+<!-- About -->
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+Akos Designs is a creative design brand focused on delivering professional graphics, branding, and visual communication solutions.  
+My goal is to help individuals, ministries, and businesses present their message with clarity and creativity.
+</p>
+
+</section>
+
+<!-- Projects -->
+
+<section class="projects" id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="project-grid">
+
+<div class="card">
+<h3>Church Flyer Design</h3>
+<p>Modern event flyer design for church programs and youth conferences.</p>
+</div>
+
+<div class="card">
+<h3>Social Media Branding</h3>
+<p>Creative branding kits and social media graphics for digital engagement.</p>
+</div>
+
+<div class="card">
+<h3>Logo Design</h3>
+<p>Clean and memorable logos that represent brands professionally.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact" id="contact">
+
+<h2>Let's Work Together</h2>
+
+<p>Email: your@email.com</p>
+
+<p>Instagram: @akosdesigns</p>
+
+</section>
+
+<footer>
+
+© 2026 Akos Designs. All Rights Reserved.
+
+</footer>
 
 </body>
 </html>
